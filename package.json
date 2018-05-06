@@ -1,0 +1,34 @@
+{
+  "name": "vimpm",
+  "version": "0.0.1",
+  "description": "Vim plugin manager written in JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "prologger": "^2.0.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PROPHESSOR/VIMpm.git"
+  },
+  "keywords": [
+    "vim",
+    "plugins",
+    "package",
+    "manager",
+    "js",
+    "npm",
+    "pathogen",
+    "vundle"
+  ],
+  "author": "PROPHESSOR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PROPHESSOR/VIMpm/issues"
+  },
+  "homepage": "https://github.com/PROPHESSOR/VIMpm#readme"
+}
