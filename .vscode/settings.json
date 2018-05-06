@@ -2,5 +2,7 @@
 	"licenser.author": "PROPHESSOR",
 	"licenser.license": "MIT",
 	"licenser.projectName": "VIMpm",
-	"licenser.useSingleLineStyle": false
+	"licenser.useSingleLineStyle": false,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": false
 }
