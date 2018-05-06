@@ -39,8 +39,8 @@ const cmds = {
 
 switch (cmd[0]) {
     case 'i':
-    case 'install':
     case '-i':
+    case 'install':
     case '--install':
         cmds.install(cmd[1]);
         break;

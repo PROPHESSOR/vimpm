@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "prologger": "^2.0.0",
+    "prompt-sync": "^4.1.6",
     "request": "^2.85.0"
   },
   "devDependencies": {},
