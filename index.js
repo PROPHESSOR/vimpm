@@ -25,7 +25,8 @@ const { log, info, warn, error, success } = Logger;
 const cmd = process.argv.slice(2);
 
 const cmds = {
-    install: require('./commands/install'),
+    install:       require('./commands/install'),
+    installVundle: require('./commands/installVundle'),
     version () {
         log(`VIMpm version: ${require('./package.json').version} by PROPHESSOR\n`);
     },
@@ -49,6 +50,10 @@ switch (cmd[0]) {
     case '-V':
     case '--version':
         cmds.version();
+        break;
+
+    case '--installVundle':
+        cmds.installVundle();
         break;
 
     case '-h':
