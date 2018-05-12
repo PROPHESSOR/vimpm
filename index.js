@@ -27,14 +27,18 @@ const cmd = process.argv.slice(2);
 const cmds = {
     install:       require('./commands/install'),
     installVundle: require('./commands/installVundle'),
+    list:          require('./commands/list'),
     version () {
         log(`VIMpm version: ${require('./package.json').version} by PROPHESSOR\n`);
     },
     help () {
         log(`Usage: vimpm
-            install <plugin_name>        - Install the plugin
-            remove  <plugin_name>        - Remove the plugin
-            update  <plugin_name or all> - Update the plugin(s)`);
+            install <plugin_name>          - Install the plugin
+            list                           - Show plugin list
+            remove  <plugin_name>        - Remove the plugin (WIP)
+            update  <plugin_name or all> - Update the plugin(s) (WIP)
+            installVundle                - Install Vundle
+        `);
     },
 };
 
@@ -52,8 +56,16 @@ switch (cmd[0]) {
         cmds.version();
         break;
 
+    case 'installVundle':
     case '--installVundle':
         cmds.installVundle();
+        break;
+
+    case 'l':
+    case '-l':
+    case 'list':
+    case '--list':
+        cmds.list();
         break;
 
     case '-h':
